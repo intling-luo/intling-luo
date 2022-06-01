@@ -1,12 +1,12 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h> 
-#define ROW 10//ĞĞ 
-#define COL 10//ÁĞ 
-#define NUM 10//À× 
+#define ROW 10//è¡Œ 
+#define COL 10//åˆ— 
+#define NUM 10//é›· 
 int map[ROW+2][COL+2];
 
-void GameInit()//³õÊ¼»¯ 
+void GameInit()//åˆå§‹åŒ– 
 {
 	srand((unsigned int )time(NULL));
 	for(int i=0;i<=ROW+2;i++)
@@ -16,10 +16,10 @@ void GameInit()//³õÊ¼»¯
 			map[i][j]=0;
 		}
 	}
-	for(int n=0;n<NUM;n++)//²¼ÖÃÀ× 
+	for(int n=0;n<NUM;n++)//å¸ƒç½®é›· 
 	{
-		int r=rand()%ROW+1;//Ëæ»úĞĞ 
-		int c=rand()%COL+1;//Ëæ»úÁĞ 
+		int r=rand()%ROW+1;//éšæœºè¡Œ 
+		int c=rand()%COL+1;//éšæœºåˆ— 
 		
 		if(map[r][c]==0)
 		{
@@ -28,7 +28,7 @@ void GameInit()//³õÊ¼»¯
 	}
 }
 
-void GameNum()//É¨³öµÄÊı×Ö
+void GameNum()//æ‰«å‡ºçš„æ•°å­—
 {
 	for(int i=1;i<ROW+1;i++)
 	{
@@ -51,7 +51,7 @@ void GameNum()//É¨³öµÄÊı×Ö
 	}
 } 
 
-void GameDraw()//´òÓ¡ 
+void GameDraw()//æ‰“å° 
 {
 	for(int i=1;i<=ROW;i++)
 	{
