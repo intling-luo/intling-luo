@@ -1,5 +1,5 @@
 # name 凌落
-## noob
+## is a noob  
 c语言初学者  
 **keritial sama saikoda!**  
 ~~有趣的标签↓~~  
